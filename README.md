@@ -15,6 +15,7 @@
  	- [Highlighted features](#highlighted-features)
  	- [License and credits](#license-and-credits)
  	- [Deep Potential in a nutshell](#deep-potential-in-a-nutshell)
+- [ROCm](# Use ROCm install from latest docker image)
 - [Download and install](#download-and-install)
 - [Use DeePMD-kit](#use-deepmd-kit)
 - [Code structure](#code-structure)
@@ -25,6 +26,12 @@ DeePMD-kit is a package written in Python/C++, designed to minimize the effort r
 
 For more information, check the [documentation](https://deepmd.readthedocs.io/).
 
+# Use ROCm install from latest docker image
+```
+pip3 uninstall    h5py numpy wrapt opt_einsum gast astunparse termcolor keras_preprocessing google-api-python-clien absl-py protobuf -y
+pip3 install    h5py==3.1.0 numpy==1.19.3 wrapt==1.12.1 opt_einsum==3.3.0 gast==0.4.0 astunparse==1.6.3 termcolor==1.1.0 keras_preprocessing==1.1.2 google-api-python-client==2.45.0 absl-py==0.10.0 protobuf==3.20.1 
+DP_VARIANT=rocm ROCM_ROOT=/opt/rocm pip3 install .
+```
 # Highlights in DeePMD-kit v2.0
 * [Model compression](doc/freeze/compress.md). Accelerate the efficiency of model inference for 4-15 times.
 * [New descriptors](doc/model/overall.md). Including [`se_e2_r`](doc/model/train-se-e2-r.md) and [`se_e3`](doc/model/train-se-e3.md).
