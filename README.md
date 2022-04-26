@@ -15,7 +15,7 @@
  	- [Highlighted features](#highlighted-features)
  	- [License and credits](#license-and-credits)
  	- [Deep Potential in a nutshell](#deep-potential-in-a-nutshell)
-- [ROCm](#Use ROCm install from latest docker image)
+- [ROCm](Use ROCm install from latest docker image)
 - [Download and install](#download-and-install)
 - [Use DeePMD-kit](#use-deepmd-kit)
 - [Code structure](#code-structure)
